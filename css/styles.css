@@ -12,11 +12,11 @@ body {
   background-color: var(--primary-second-brand-color);
 }
 
-ul {
+.list {
   list-style-type: none;
 }
 
-a {
+.link {
   text-decoration: none;
 }
 
