@@ -33,15 +33,13 @@ a {
 }
 /* лого в хедере */
 .logo {
+  color: var(--primary-first-brand-color);
   font-family: var(--primary-font);
   font-size: 18px;
   font-weight: 800;
   line-height: 1.17;
   letter-spacing: 0.54px;
-}
-
-.logo .logo-first {
-  color: var(--primary-first-brand-color);
+  text-transform: uppercase;
 }
 
 .logo .logo-two {
@@ -53,29 +51,40 @@ a {
 }
 
 /* меню */
-.menu-title {
+.list {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
-.menu-title .menu-studio,
-.menu-title .menu-portfolio,
-.menu-title .menu-contacts {
+.list .link {
   color: var(--primary-second-brand-color);
 }
+.list .link:hover,
+.list .link:focus,
+.list .link:active {
+  color: var(--active-link-color);
+}
+
 /* адрес */
 .address-title {
+  font-style: normal;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   letter-spacing: 0.32px;
 }
 
-.address-title .address-mail,
-.address-title .address-tel {
+.address-title .link,
+.address-title .link {
   color: var(--primary-body-color);
+}
+
+.address-title .link:hover,
+.address-title .link:focus,
+.address-title .link:active {
+  color: var(--active-link-color);
 }
 
 /* оснований контент */
@@ -98,6 +107,16 @@ a {
   text-align: center;
   color: var(--primary-white-color);
   background-color: var(--primary-first-brand-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+}
+
+.main-focus .main-button:hover,
+.main-focus .main-button:focus,
+.main-focus .main-button:active {
+  background-color: var(--active-link-color);
 }
 /* 2 секція */
 
@@ -135,6 +154,10 @@ a {
   text-align: center;
 }
 
+.our-team-list {
+  background-color: var(--primary-white-color);
+}
+
 /* footer */
 .bootom-text {
   font-size: 16px;
@@ -146,6 +169,7 @@ a {
 
 /* портфоліо */
 .page-list {
+  list-style: none;
   text-align: center;
 }
 
@@ -157,10 +181,12 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  cursor: pointer;
 }
 
 .page-list .link:hover,
 .page-list .link:focus {
+  color: var(--primary-white-color);
   background-color: var(--secondary-accent-color);
 }
 
