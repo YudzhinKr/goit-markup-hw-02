@@ -8,7 +8,7 @@ body {
   background-color: var(--primary-white-color);
 }
 
-footer {
+.bootom-page {
   background-color: var(--primary-second-brand-color);
 }
 
@@ -111,6 +111,7 @@ a {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.64px;
+  cursor: pointer;
 }
 
 .main-focus .main-button:hover,
@@ -185,11 +186,7 @@ a {
 }
 
 .page-list .link:hover,
-.page-list .link:focus {
-  color: var(--primary-white-color);
-  background-color: var(--secondary-accent-color);
-}
-
+.page-list .link:focus,
 .page-list .link:active {
   color: var(--primary-white-color);
   background-color: var(--active-link-color);
